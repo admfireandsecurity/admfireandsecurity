@@ -4,19 +4,19 @@ const Services: React.FC = () => {
   const services = [
     {
       title: "Fire Alarm Systems",
-      desc: "Professional installation, testing, and maintenance of fire alarm systems."
+      desc: "Certified installation and testing of advanced fire detection systems."
     },
     {
-      title: "Security Systems",
-      desc: "Comprehensive security and intruder alarm installations for homes and businesses."
+      title: "Intruder Alarms",
+      desc: "Customised alarm systems to protect homes and commercial properties."
     },
     {
-      title: "CCTV Monitoring",
-      desc: "High-definition camera systems for 24/7 surveillance and protection."
+      title: "CCTV & Monitoring",
+      desc: "High-resolution cameras with remote access and professional monitoring."
     },
     {
-      title: "Emergency Support",
-      desc: "Rapid response and technical support available 24 hours a day."
+      title: "Emergency Lighting",
+      desc: "Ensuring safety compliance with emergency illumination solutions."
     }
   ];
 
