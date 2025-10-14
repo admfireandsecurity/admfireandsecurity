@@ -15,4 +15,14 @@ const Navbar: React.FC = () => {
           <div className="services-dropdown-content">
             <Link to="/service-fire">Fire Alarm Installation</Link>
             <Link to="/service-cctv">CCTV Installation</Link>
-            <Li
+            <Link to="/service-access">Access Control</Link>
+            <Link to="/service-intruder">Intruder Alarms</Link>
+          </div>
+        </div>
+        <Link to="/contact">Contact</Link>
+      </div>
+    </nav>
+  );
+};
+
+export default Navbar;
