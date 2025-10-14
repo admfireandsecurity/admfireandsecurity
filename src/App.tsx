@@ -1,29 +1,24 @@
-import React from "react";
-import { Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import ServiceFire from "./pages/ServiceFire";
 import ServiceCCTV from "./pages/ServiceCCTV";
+import ServiceAccess from "./pages/ServiceAccess";
 import ServiceIntruder from "./pages/ServiceIntruder";
-import ServiceLighting from "./pages/ServiceLighting";
 
-const App: React.FC = () => {
+function App() {
   return (
-    <>
-      <Navbar />
+    <Router>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/services/fire-alarms" element={<ServiceFire />} />
-        <Route path="/services/cctv" element={<ServiceCCTV />} />
-        <Route path="/services/intruder-alarms" element={<ServiceIntruder />} />
-        <Route path="/services/emergency-lighting" element={<ServiceLighting />} />
+        <Route path="/service-fire" element={<ServiceFire />} />
+        <Route path="/service-cctv" element={<ServiceCCTV />} />
+        <Route path="/service-access" element={<ServiceAccess />} />
+        <Route path="/service-intruder" element={<ServiceIntruder />} />
       </Routes>
-      <Footer />
-    </>
+    </Router>
   );
-};
+}
 
 export default App;
