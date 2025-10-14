@@ -1,276 +1,155 @@
-/* === GLOBAL RESET === */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
+/* App.css */
 
+/* Global styles */
 body {
-  background-color: #121212; /* dark grey background */
-  color: #E0E0E0;
-  line-height: 1.6;
-  overflow-x: hidden;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #1C1C1C;
+  color: #CCCCCC;
 }
 
-/* === NAVBAR === */
-nav {
-  background-color: #1E1E1E;
-  padding: 20px 40px;
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navbar */
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid #D32F2F;
+  background-color: #222;
+  padding: 1rem 2rem;
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 1000;
 }
 
-nav h1 {
-  color: #FFC107;
-  font-size: 1.6rem;
-  font-weight: 700;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 25px;
-}
-
-.nav-links li {
-  position: relative;
-}
-
-.nav-links a, .nav-links span {
-  text-decoration: none;
-  color: #E0E0E0;
+.navbar a {
+  color: #CCCCCC;
+  margin: 0 1rem;
   font-weight: 500;
-  cursor: pointer;
   transition: color 0.3s ease;
 }
 
-.nav-links a:hover, .nav-links span:hover {
-  color: #D32F2F;
+.navbar a:hover {
+  color: #E63946;
 }
 
-/* === DROPDOWN MENU === */
-.services-dropdown .dropdown-menu {
+/* Dropdown menu */
+.navbar .services-dropdown {
+  position: relative;
+}
+
+.navbar .services-dropdown-content {
   display: none;
   position: absolute;
-  top: 35px;
+  top: 100%;
   left: 0;
-  background-color: #2A2A2A;
-  border: 1px solid #D32F2F;
-  border-radius: 6px;
-  padding: 10px 0;
+  background-color: #222;
   min-width: 200px;
-  z-index: 50;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+  padding: 0.5rem 0;
 }
 
-.services-dropdown .dropdown-menu li {
-  padding: 10px 20px;
-}
-
-.services-dropdown .dropdown-menu li a {
-  color: #E0E0E0;
+.navbar .services-dropdown:hover .services-dropdown-content {
   display: block;
 }
 
-.services-dropdown .dropdown-menu li a:hover {
-  color: #FFC107;
-}
-
-/* Show dropdown on hover */
-.services-dropdown:hover .dropdown-menu {
+.navbar .services-dropdown-content a {
   display: block;
+  padding: 0.5rem 1rem;
 }
 
-/* === HERO SECTION === */
+.navbar .services-dropdown-content a:hover {
+  background-color: #E63946;
+  color: #fff;
+}
+
+/* Hero section */
 .hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
   text-align: center;
-  padding: 100px 20px;
-  background: linear-gradient(to bottom right, #1E1E1E, #2C2C2C);
+  background-color: #1C1C1C;
+  padding: 0 2rem;
 }
 
 .hero h1 {
-  font-size: 2.5rem;
-  color: #FFC107;
-  margin-bottom: 20px;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #E63946;
 }
 
 .hero p {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
   color: #CCCCCC;
-  max-width: 600px;
-  margin: 0 auto 30px;
 }
 
-.quote-btn {
-  background: linear-gradient(to right, #D32F2F, #FFC107);
-  color: #121212;
+.hero .quote-btn {
+  padding: 1rem 2rem;
+  background-color: #E63946;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
   font-weight: 600;
-  padding: 12px 28px;
-  border-radius: 6px;
-  text-decoration: none;
-  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.quote-btn:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 10px rgba(255, 193, 7, 0.3);
+.hero .quote-btn:hover {
+  background-color: #F1FA3C;
+  color: #222;
 }
 
-/* === SERVICES GRID === */
+/* Services grid */
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 25px;
-  padding: 60px 20px;
-  background-color: #181818;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 4rem 2rem;
 }
 
 .service-card {
-  background: #2A2A2A;
-  padding: 40px 20px;
+  background-color: #2A2A2A;
+  padding: 2rem;
   border-radius: 10px;
   text-align: center;
-  text-decoration: none;
-  color: #E0E0E0;
-  font-weight: 500;
-  transition: all 0.3s ease;
-  border: 1px solid transparent;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
 }
 
 .service-card:hover {
-  border: 1px solid #D32F2F;
-  background: #333333;
   transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0,0,0,0.5);
 }
 
-/* === SERVICE DETAIL PAGES === */
-.service-detail {
-  padding: 80px 20px;
-  max-width: 800px;
-  margin: 0 auto;
-  color: #E0E0E0;
+.service-card h3 {
+  color: #E63946;
+  margin-bottom: 1rem;
 }
 
-.service-detail h1 {
-  color: #FFC107;
-  margin-bottom: 20px;
-  font-size: 2rem;
-}
-
-.service-detail p {
-  margin-bottom: 20px;
+.service-card p {
   color: #CCCCCC;
 }
 
-.service-detail ul {
-  list-style: disc;
-  padding-left: 20px;
-  margin-bottom: 20px;
-}
-
-.service-detail li {
-  margin-bottom: 10px;
-}
-
-.service-detail .quote-btn {
-  background: linear-gradient(to right, #D32F2F, #FFC107);
-  color: #121212;
-  font-weight: bold;
-  padding: 12px 25px;
-  border-radius: 6px;
-  text-decoration: none;
-  transition: transform 0.2s ease, box-shadow 0.3s ease;
-}
-
-.service-detail .quote-btn:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 10px rgba(255, 193, 7, 0.3);
-}
-
-/* === CONTACT PAGE === */
-.contact-page {
-  padding: 80px 20px;
-  max-width: 600px;
-  margin: 0 auto;
-  color: #E0E0E0;
-}
-
-.contact-page h1 {
-  color: #FFC107;
-  margin-bottom: 20px;
-  text-align: center;
-  font-size: 2rem;
-}
-
-.contact-page p {
-  color: #CCCCCC;
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.contact-page form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.contact-page input,
-.contact-page textarea {
-  padding: 12px;
-  background-color: #1E1E1E;
-  color: #E0E0E0;
-  border: 1px solid #333333;
-  border-radius: 5px;
-  outline: none;
-  font-size: 1rem;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.contact-page input:focus,
-.contact-page textarea:focus {
-  border-color: #D32F2F;
-  box-shadow: 0 0 8px rgba(211, 47, 47, 0.4);
-}
-
-.contact-page button {
-  background: linear-gradient(to right, #D32F2F, #FFC107);
-  color: #121212;
-  font-weight: 600;
-  padding: 12px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.3s ease;
-}
-
-.contact-page button:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 12px rgba(255, 193, 7, 0.4);
-}
-
-.contact-page p.success-message {
-  color: #FFC107;
-  margin-top: 15px;
-  text-align: center;
-}
-
-.contact-page p.error-message {
-  color: #D32F2F;
-  margin-top: 15px;
-  text-align: center;
-}
-
-/* === FOOTER === */
+/* Footer */
 footer {
-  background-color: #1E1E1E;
-  color: #B0B0B0;
+  background-color: #222;
   text-align: center;
-  padding: 30px 10px;
-  border-top: 2px solid #D32F2F;
-  font-size: 0.9rem;
+  padding: 2rem;
+  color: #CCCCCC;
 }
+
+footer a {
+  color: #E63946;
+  margin: 0 0.5rem;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #
