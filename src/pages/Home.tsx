@@ -3,20 +3,32 @@ import { Link } from "react-router-dom";
 
 const Home: React.FC = () => {
   return (
-    <section className="home">
-      <div className="hero">
-        <h1>ADM Fire & Security Specialists</h1>
-        <p>Professional installation and maintenance of safety and security systems across the UK.</p>
-        <Link to="/contact" className="quote-btn">Get a Free Quote</Link>
-      </div>
+    <main>
+      <section className="hero">
+        <h1>ADM Fire and Security Specialists</h1>
+        <p>Professional security solutions for homes and businesses.</p>
+        <Link to="/contact" className="quote-btn">Get a Quote</Link>
+      </section>
 
-      <div className="services-grid">
-        <Link to="/services/fire-alarms" className="service-card">🔥 Fire Alarm Systems</Link>
-        <Link to="/services/intruder-alarms" className="service-card">🔔 Intruder Alarms</Link>
-        <Link to="/services/cctv" className="service-card">📹 CCTV & Monitoring</Link>
-        <Link to="/services/emergency-lighting" className="service-card">💡 Emergency Lighting</Link>
-      </div>
-    </section>
+      <section className="services-grid">
+        <Link to="/service-fire" className="service-card">
+          <h3>Fire Alarm Installation</h3>
+          <p>Protect your property with reliable fire alarms.</p>
+        </Link>
+        <Link to="/service-cctv" className="service-card">
+          <h3>CCTV Installation</h3>
+          <p>High-quality surveillance solutions.</p>
+        </Link>
+        <Link to="/service-access" className="service-card">
+          <h3>Access Control</h3>
+          <p>Secure your building with smart access systems.</p>
+        </Link>
+        <Link to="/service-intruder" className="service-card">
+          <h3>Intruder Alarms</h3>
+          <p>Protect your property from unauthorized entry.</p>
+        </Link>
+      </section>
+    </main>
   );
 };
 
