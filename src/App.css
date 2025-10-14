@@ -1,29 +1,89 @@
-.app-container {
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0d47a1;
+  padding: 15px 30px;
+  color: #fff;
+}
+
+.nav-logo {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(to right, #0d47a1, #1976d2);
+  color: white;
   text-align: center;
-  margin-top: 50px;
-  font-family: sans-serif;
+  padding: 100px 20px;
 }
 
-h1 {
-  color: #2c3e50;
+.hero h1 {
+  font-size: 2.8rem;
 }
 
-p {
-  color: #555;
-  margin-bottom: 20px;
+.hero p {
+  font-size: 1.2rem;
+  margin: 20px 0;
 }
 
-bolt-button {
-  font-size: 16px;
-  padding: 8px 16px;
-  margin-top: 10px;
+/* Services */
+.services {
+  text-align: center;
+  padding: 80px 20px;
 }
 
-bolt-card {
-  display: block;
-  width: 300px;
-  margin: 0 auto;
-  padding: 16px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
+.services h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.service-card {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Contact */
+.contact {
+  background: #e3f2fd;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+/* Footer */
+.footer {
+  background: #0d47a1;
+  color: white;
+  text-align: center;
+  padding: 20px;
 }
