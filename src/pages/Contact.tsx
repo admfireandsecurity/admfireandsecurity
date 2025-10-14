@@ -49,4 +49,21 @@ const Contact: React.FC = () => {
           color: "#CCCCCC",
         }}
       >
-        Fill out the form below, and our team wi
+        Fill out the form below, and our team will respond promptly.
+      </p>
+
+      <form onSubmit={handleSubmit}>
+        <input
+          type="text"
+          name="name"
+          placeholder="Your Name"
+          value={formData.name}
+          onChange={handleChange}
+          required
+        />
+
+        <input
+          type="email"
+          name="email"
+          placeholder="Your Email"
+          value={formData.email}
