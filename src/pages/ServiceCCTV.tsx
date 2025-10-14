@@ -4,17 +4,26 @@ import { Link } from "react-router-dom";
 const ServiceCCTV: React.FC = () => {
   return (
     <section className="service-detail">
-      <h1>CCTV & Monitoring</h1>
+      <h1>CCTV Installation</h1>
       <p>
-        Our CCTV systems provide high-definition surveillance and secure remote access.
-        We supply and install IP cameras, DVR systems, and cloud recording solutions.
+        Secure your property with our professional CCTV installation services. ADM Fire & Security installs high-quality camera systems for homes and businesses.
       </p>
+
+      <h2>Our CCTV Services Include:</h2>
       <ul>
-        <li>HD and 4K camera options</li>
-        <li>Remote viewing via smartphone app</li>
-        <li>Professional monitoring available</li>
+        <li>Full CCTV system design and consultation</li>
+        <li>Installation of indoor and outdoor cameras</li>
+        <li>Remote monitoring setup</li>
+        <li>Maintenance, repair, and upgrades</li>
       </ul>
-      <Link to="/contact" className="quote-btn">Get a Quote</Link>
+
+      <p>
+        We ensure your surveillance system is reliable, efficient, and easy to use.
+      </p>
+
+      <Link to="/contact" className="quote-btn">
+        Get a Quote
+      </Link>
     </section>
   );
 };
