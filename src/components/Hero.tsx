@@ -5,8 +5,8 @@ const Hero: React.FC = () => {
     <section className="hero">
       <div className="hero-content">
         <h1>ADM Fire & Security Specialists</h1>
-        <p>Protecting your property with reliable fire and security solutions.</p>
-        <bolt-button appearance="primary">Get a Free Quote</bolt-button>
+        <p>Protecting lives and property with industry-leading safety and security systems.</p>
+        <bolt-button appearance="primary" class="quote-btn">Get a Free Quote</bolt-button>
       </div>
     </section>
   );
