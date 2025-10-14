@@ -6,15 +6,24 @@ const ServiceIntruder: React.FC = () => {
     <section className="service-detail">
       <h1>Intruder Alarm Systems</h1>
       <p>
-        Secure your premises with our range of wired and wireless intruder alarms.
-        We tailor each system to meet the exact security needs of your home or business.
+        Protect your property from unauthorized entry with our intruder alarm systems. ADM Fire & Security installs reliable alarms for homes and businesses.
       </p>
+
+      <h2>Our Intruder Alarm Services Include:</h2>
       <ul>
-        <li>Smart alarm integration with mobile alerts</li>
-        <li>Police response options available</li>
-        <li>NSI Gold-approved installations</li>
+        <li>Intruder alarm system design and consultation</li>
+        <li>Installation of sensors and sirens</li>
+        <li>Integration with CCTV and access control</li>
+        <li>Regular testing, maintenance, and upgrades</li>
       </ul>
-      <Link to="/contact" className="quote-btn">Get a Quote</Link>
+
+      <p>
+        Our systems are tailored to your property and provide instant alerts in case of any security breach.
+      </p>
+
+      <Link to="/contact" className="quote-btn">
+        Get a Quote
+      </Link>
     </section>
   );
 };
