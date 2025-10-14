@@ -154,17 +154,25 @@ nav ul li a:hover {
   box-shadow: 0 4px 10px rgba(255, 193, 7, 0.3);
 }
 
-/* === CONTACT PAGE === */
+/* === CONTACT PAGE STYLING === */
 .contact-page {
   padding: 80px 20px;
   max-width: 600px;
   margin: 0 auto;
+  color: #E0E0E0;
 }
 
 .contact-page h1 {
-  color: #FFC107;
+  color: #FFC107; /* yellow highlight for headings */
   margin-bottom: 20px;
   text-align: center;
+  font-size: 2rem;
+}
+
+.contact-page p {
+  color: #CCCCCC;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .contact-page form {
@@ -176,31 +184,47 @@ nav ul li a:hover {
 .contact-page input,
 .contact-page textarea {
   padding: 12px;
-  background-color: #1E1E1E;
+  background-color: #1E1E1E; /* dark grey input background */
   color: #E0E0E0;
-  border: 1px solid #333333;
+  border: 1px solid #333333; /* subtle border */
   border-radius: 5px;
   outline: none;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .contact-page input:focus,
 .contact-page textarea:focus {
-  border-color: #D32F2F;
+  border-color: #D32F2F; /* red focus border */
+  box-shadow: 0 0 8px rgba(211, 47, 47, 0.4);
 }
 
 .contact-page button {
-  background: linear-gradient(to right, #D32F2F, #FFC107);
-  color: #121212;
+  background: linear-gradient(to right, #D32F2F, #FFC107); /* red to yellow gradient */
+  color: #121212; /* dark text on button */
   font-weight: 600;
   padding: 12px;
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
 }
 
 .contact-page button:hover {
   transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(255, 193, 7, 0.4); /* subtle yellow glow */
+}
+
+.contact-page p.success-message {
+  color: #FFC107;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.contact-page p.error-message {
+  color: #D32F2F;
+  margin-top: 15px;
+  text-align: center;
 }
 
 /* === FOOTER === */
