@@ -40,30 +40,4 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <section className="contact-page">
-      <h1>Get a Quote or Ask a Question</h1>
-      <p
-        style={{
-          textAlign: "center",
-          marginBottom: "30px",
-          color: "#CCCCCC",
-        }}
-      >
-        Fill out the form below, and our team will respond promptly.
-      </p>
-
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          name="name"
-          placeholder="Your Name"
-          value={formData.name}
-          onChange={handleChange}
-          required
-        />
-
-        <input
-          type="email"
-          name="email"
-          placeholder="Your Email"
-          value={formData.email}
+    <section className="contact
