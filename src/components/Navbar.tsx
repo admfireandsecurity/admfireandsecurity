@@ -1,19 +1,22 @@
 import React from "react";
-import { Link } from "react-router-dom"; // assuming you are using react-router-dom
+import { Link } from "react-router-dom";
+import "./Navbar.css"; // Optional: for styling
 
 const Navbar: React.FC = () => {
   return (
-    <nav>
-      <h1>ADM Fire & Security</h1>
+    <nav className="navbar">
+      <div className="logo">
+        <Link to="/">ADM Fire & Security</Link>
+      </div>
       <ul className="nav-links">
         <li><Link to="/">Home</Link></li>
-        <li className="services-dropdown">
+        <li className="dropdown">
           <span>Services</span>
-          <ul className="dropdown-menu">
+          <ul className="dropdown-content">
             <li><Link to="/service-fire">Fire Alarm Installation</Link></li>
             <li><Link to="/service-cctv">CCTV Installation</Link></li>
             <li><Link to="/service-access">Access Control</Link></li>
-            <li><Link to="/service-intruder">Intruder Alarm</Link></li>
+            <li><Link to="/service-intruder">Intruder Alarms</Link></li>
           </ul>
         </li>
         <li><Link to="/contact">Contact</Link></li>
