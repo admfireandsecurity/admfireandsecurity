@@ -1,21 +1,48 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../App.css";
 
 const ServiceLighting: React.FC = () => {
   return (
-    <section className="service-detail">
-      <h1>Emergency Lighting</h1>
-      <p>
-        We design and install emergency lighting systems that meet BS5266 standards,
-        ensuring your premises remain safe and compliant during power outages.
-      </p>
-      <ul>
-        <li>LED emergency lighting systems</li>
-        <li>Routine testing and certification</li>
-        <li>Maintenance and compliance audits</li>
-      </ul>
-      <Link to="/contact" className="quote-btn">Get a Quote</Link>
-    </section>
+    <div className="service-page">
+      <div className="service-hero">
+        <h1>Emergency Lighting Installation</h1>
+        <p>
+          Ensure safety during power failures with professional emergency
+          lighting solutions designed for homes, offices, and commercial
+          properties.
+        </p>
+      </div>
+
+      <div className="service-content">
+        <h2>Why Choose Our Emergency Lighting?</h2>
+        <p>
+          We specialize in the design, installation, and maintenance of
+          emergency lighting systems that comply with safety standards and
+          building regulations. Our team ensures your lighting system guides
+          occupants safely during emergencies.
+        </p>
+
+        <h3>Our Services Include:</h3>
+        <ul>
+          <li>Design and layout planning for emergency lighting systems</li>
+          <li>Installation of energy-efficient emergency lighting units</li>
+          <li>Routine inspections and maintenance checks</li>
+          <li>Replacement and testing of backup batteries</li>
+          <li>Compliance with BS 5266 and fire safety standards</li>
+        </ul>
+
+        <p>
+          We use trusted, high-quality components to ensure durability and
+          reliability. Our systems are ideal for schools, offices, warehouses,
+          and apartment blocks.
+        </p>
+
+        <Link to="/contact" className="quote-button">
+          Request a Free Quote
+        </Link>
+      </div>
+    </div>
   );
 };
 
