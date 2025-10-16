@@ -1,4 +1,5 @@
 import React from "react";
+import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import "./Footer.css";
 
 const Footer: React.FC = () => {
@@ -7,23 +8,34 @@ const Footer: React.FC = () => {
       <div className="footer-content">
         <p>© 2025 ADM Fire & Security Specialists. All rights reserved.</p>
         <div className="social-icons">
-          {/* Facebook */}
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M22.675 0h-21.35C.594 0 0 .593 0 1.326v21.348C0 23.407.594 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.894-4.788 4.66-4.788 1.325 0 2.463.099 2.794.143v3.24l-1.918.001c-1.504 0-1.794.716-1.794 1.764v2.313h3.587l-.467 3.622h-3.12V24h6.116C23.407 24 24 23.407 24 22.674V1.326C24 .593 23.407 0 22.675 0z" />
-            </svg>
-<a
-  href="https://instagram.com"
-  target="_blank"
-  rel="noopener noreferrer"
-  aria-label="Instagram"
->
-  <svg
-    width="20"
-    height="20"
-    viewBox="0 0 24 24"
-    fill="currentColor"
-  >
-    <path d="M12 2.163c3.204 0 3.584.012 4.849.07 1.366.062 2.633.33 3.608 1.305.975.976 1.244 2.242 1.305 3.608.058 1.265.069 1.645.069 4.849s-.012 3.584-.07 4.849c-.062 1.366-.33 2.633-1.305 3.608-.976.975-2.242 1.244-3.608 1.305-1.265.058-1.645.069-4.849.069s-3.584-.012-4.849-.07c-1.366-.062-2.633-.33-3.608-1.305-.975-.976-1.244-2.242-1.305-3.608-.058-1.265-.069-1.645-.069-4.849s.012-3.584.07-4.849c.062-1.366.33-2.633 1.305-3.608.976-.975 2.242-1.244 3.608-1.305 1.265-.058 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.013-4.947.072-1.571.072-2.967.332-4.07 1.435C2.332 2.65 2.072 4.046 2 5.617.941 6.897.928 7.305.928 10.564v2.872c0 3.259.013 3.667.072 4.947.072 1.571.332 2.967 1.435 4.07 1.103 1.103 2.499 1.363 4.07 1.435 1.28.058 1.688.072 4.947.072s3.667-.013 4.947-.072c1.571-.072 2.967-.332 4.07-1.435 1.103-1.103 1.363-2.499 1.435-4.07.058-1.28.072-1.688.072-4.947s-.013-3.667-.072-4.947c-.072-1.571-.332-2.967-1.435-4.07C19.867.332 18.471.072 16.9 0 15.62-.058 15.212-.072 12-.072z"/>
-  </svg>
-</a>
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+          >
+            <FaFacebookF />
+          </a>
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+          >
+            <FaInstagram />
+          </a>
+          <a
+            href="https://linkedin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+          >
+            <FaLinkedinIn />
+          </a>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
