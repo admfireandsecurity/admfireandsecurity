@@ -161,3 +161,6 @@ footer a:hover {
     grid-template-columns: 1fr;
   }
 }
+body {
+  border: 5px solid red;
+}
